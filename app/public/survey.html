@@ -16,38 +16,137 @@
     <div class="container-fluid">
 
         <div class="form-group">
-          <label for="">Name: (required)</label>
+          <label for="">Name</label>
           <input type="text"
-            class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-          <small id="helpId" class="form-text text-muted"></small>
+            class="form-control" name="" id="name" aria-describedby="helpId" placeholder="Full Name (Required)">
+          <small id="user name" class="form-text text-muted"></small>
           <br>
-          <label for="">Link to photo image: (required)</label>
+          <label for="">Your Photo</label>
           <input type="text"
-            class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-          <small id="helpId" class="form-text text-muted"></small>
+            class="form-control" name="" id="photo" aria-describedby="helpId" placeholder="Link to Profile Photo (Required)">
+          <small id="user photo" class="form-text text-muted"></small>
 
         </div>
 
         
    <div class="form-group">
-     <label for="">Queston #1</label>
-     <select multiple class="custom-select" name="" id="">
-           <option selected>1</option>
-           <option value="">2</option>
-           <option value="">3</option>
-           <option value="">4</option>
-           <option value="">5</option>
+     <label for="">Question #1</label>
+     <select class="form-control" name="" id="question1">
+          <option value="empty"></option>
+           <option value="1">1 (least like you)<option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5 (most like you)</option>
        </select>
 
-<label class="custom-control custom-radio">
-  <input type="radio" name="" id="" value="checkedValue" class="custom-control-input">
-  <span class="custom-control-indicator"></span>
-  <span class="custom-control-description"></span>
-</label>
+       <label for="">Question #2</label>
+       <select class="form-control" name="" id="question2">
+            <option value="empty"></option>
+             <option value="1">1 (least like you)<option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">5 (most like you)</option>
+         </select>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+         <label for="">Question #3</label>
+         <select class="form-control" name="" id="question3">
+              <option value="empty"></option>
+               <option value="1">1 (least like you)<option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5 (most like you)</option>
+           </select>
+
+           <label for="">Question #4</label>
+           <select class="form-control" name="" id="question4">
+                <option value="empty"></option>
+                 <option value="1">1 (least like you)<option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                 <option value="5">5 (most like you)</option>
+             </select>
+
+             <label for="">Question #5</label>
+             <select class="form-control" name="" id="question5">
+                  <option value="empty"></option>
+                   <option value="1">1 (least like you)<option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="4">4</option>
+                   <option value="5">5 (most like you)</option>
+               </select>
+
+               <label for="">Question #6</label>
+               <select class="form-control" name="" id="question6">
+                    <option value="empty"></option>
+                     <option value="1">1 (least like you)<option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5 (most like you)</option>
+                 </select>
+
+                 <label for="">Question #7</label>
+                 <select class="form-control" name="" id="question7">
+                      <option value="empty"></option>
+                       <option value="1">1 (least like you)<option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                       <option value="4">4</option>
+                       <option value="5">5 (most like you)</option>
+                   </select>
+
+                   <label for="">Question #8</label>
+                   <select class="form-control" name="" id="question8">
+                        <option value="empty"></option>
+                         <option value="1">1 (least like you)<option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5 (most like you)</option>
+                     </select>
+
+                     <label for="">Question #9</label>
+                     <select class="form-control" name="" id="question9">
+                          <option value="empty"></option>
+                           <option value="1">1 (least like you)<option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5 (most like you)</option>
+                       </select>
+
+                       <label for="">Question #10</label>
+                       <select class="form-control" name="" id="question10">
+                            <option value="empty"></option>
+                             <option value="1">1 (least like you)<option>
+                             <option value="2">2</option>
+                             <option value="3">3</option>
+                             <option value="4">4</option>
+                             <option value="5">5 (most like you)</option>
+                         </select>
+
+       </div>
+
+<div>
+    <button id= "surveySub" type="submit" class="btn btn-primary">Submit</button>
 
 </div>
+
+<br>
+
+<footer>
+    <div class="container">
+      <a href="/api/friends">Discover Friends API</a>
+      <span>|</span>
+      <a href="https://github.com/PENA5/friend-finder">GitHub Repo</a>
+
+    </div>
+  </footer>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -56,3 +155,44 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<script type="text/javascript">
+	$("#surveySub").on("click", function(event) {
+		event.preventDefault();
+		// Form validation
+		var valid = true;
+		if($("#name").val() === "" || $("#photo").val() === "") {
+			valid = false;
+		} else if($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+			valid = false;
+		}
+		if(valid === true) {
+			var newUser = {
+				name: $("#name").val().trim(),
+				photo: $("#photo").val().trim(),
+				scores: [
+					$("#question1").val(),
+					$("#question2").val(),
+					$("#question3").val(),
+					$("#question4").val(),
+					$("#question5").val(),
+					$("#question6").val(),
+					$("#question7").val(),
+					$("#question8").val(),
+					$("#question9").val(),
+					$("#question10").val()
+				]
+			};
+			var currentURL = window.location.origin;
+			// Ajax call for receiving response after POST req
+			$.post(currentURL + "/api/friends", newUser, function(data) {
+				$("#bestFriend").text(data.name);
+				$("#bestFriendPhoto").attr("src", data.photo);
+				$("#bestFriendModal").modal("toggle");
+			});
+		} else {
+			// If a required field is missing, show alert
+			alert("Survey is incomplete!");
+		}
+	});
+</script>
